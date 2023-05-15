@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ff1ba387ed6455a9fb6a7c6bace04f5" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineSchoolModel.Category" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Client" Width="1.5" PointX="8" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.DurationType" Width="1.5" PointX="8.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Employee" Width="1.5" PointX="11" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.EmployeeCategory" Width="1.5" PointX="8.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Gender" Width="1.5" PointX="5.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Manufacturer" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Product" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.ProductCategory" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.PurchaseHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Rate" Width="1.5" PointX="8.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Record" Width="1.5" PointX="13.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Service" Width="1.5" PointX="11" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineSchoolModel.Tag" Width="1.5" PointX="5.75" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_ProductCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Client_Tag1" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Record_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Service_DurationType" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Employee_EmployeeCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Employee_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Employee_Rate" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Product_PurchaseHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_ProductCategory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineSchoolModel.FK_Record_Service" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

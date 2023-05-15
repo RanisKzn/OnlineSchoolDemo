@@ -1,0 +1,40 @@
+﻿<Window x:Class="OnlineSchool.RecordServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineSchool"
+        mc:Ignorable="d"
+        Title="RecordServiceWindow" Height="450" Width="800">
+    <Grid x:Name="Service">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Наименование" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"></TextBlock>
+        <TextBlock Text="{Binding ServiceName}" Name="NameTB" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Width="150" Height="30"></TextBlock>
+
+        <TextBlock Text="Длительность" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"></TextBlock>
+        <TextBlock Text="{Binding Duration}" x:Name="DurationTB" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Width="150" Height="30"></TextBlock>
+
+        <Calendar x:Name="Datecalendar" Grid.ColumnSpan="2" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" SelectedDatesChanged="Datecalendar_SelectedDatesChanged"></Calendar>
+        
+        <TextBlock Text="Время" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"></TextBlock>
+        <TextBox PreviewTextInput="TimeTB_PreviewTextInput" x:Name="TimeTB" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Width="150" Height="30"></TextBox>
+        
+        
+        <ComboBox Name="ClientListCB"  Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="200" Height="30" DisplayMemberPath="ClientName" SelectionChanged="ClientListCB_SelectionChanged"></ComboBox>
+        <Button x:Name="EnterBTN" Content="Сохранить" Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="150" Height="30" Click="EnterBTN_Click"></Button>
+        <Button x:Name="BackBTN" Content="Назад" Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="150" Height="30" Click="BackBTN_Click"></Button>
+
+    </Grid>
+</Window>
